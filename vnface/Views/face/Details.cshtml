@@ -1,0 +1,57 @@
+﻿@model vnface.Models.face_tb
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<h2 class="bg-success text-center">Chi tiết</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.face_image)
+        </dt>
+
+        <dd>
+            <img src="/Assets/@Html.DisplayFor(model => model.face_image) " style="width:200px;height:250px" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.feature)
+        </dt>
+
+        <dd>
+            <textarea disabled cols="20" rows="5">@Html.DisplayFor(model => model.feature)</textarea>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Quay lại", "Index")
+</p>
