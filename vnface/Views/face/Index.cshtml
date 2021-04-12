@@ -47,7 +47,8 @@
                     @Html.DisplayFor(modelItem => item.age)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.face_image)
+                    <img src="/Assets/@Html.DisplayFor(modelItem => item.face_image) " style="width:200px;height:250px" />
+
                 </td>
                 <td>
                     <textarea disabled cols="20" rows="5">@Html.DisplayFor(modelItem => item.feature)</textarea>
