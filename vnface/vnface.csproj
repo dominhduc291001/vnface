@@ -125,6 +125,7 @@
     <Content Include="Views\face\Index.cshtml" />
     <Content Include="Views\facelog\Details.cshtml" />
     <Content Include="Views\facelog\Index.cshtml" />
+    <Content Include="Views\face\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
